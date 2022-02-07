@@ -7,14 +7,23 @@
         "plural_forms": "nplurals=2; plural=(n > 1);",
         "version": "jupyterlab"
       },
+      "schema\u0004Dask": [
+        "Dask"
+      ],
       "schema\u0004Dask Dashboard": [
         "Tableau de bord de Dask"
       ],
       "schema\u0004Settings for the Dask Dashboard plugin.": [
         "Param\u00e8tres pour le plugin Dask Dashboard."
       ],
+      "schema\u0004Settings for the Dask plugin.": [
+        "Param\u00e8tres pour le plugin Dask."
+      ],
       "settings\u0004Auto-Start Client": [
         "D\u00e9marrage automatique du client"
+      ],
+      "settings\u0004Dask": [
+        "Dask"
       ],
       "settings\u0004Dask Dashboard": [
         "Tableau de bord de Dask"
@@ -22,8 +31,64 @@
       "settings\u0004Default URL for the Dask Dashboard Webserver": [
         "URL par d\u00e9faut pour le serveur Web du tableau de bord du Dask"
       ],
+      "settings\u0004Hide Cluster Manager": [
+        "Masquer le gestionnaire de cluster"
+      ],
       "settings\u0004If set to true, every notebook and console will automatically have a dask client for the active cluster injected into the kernel under the name 'client'": [
         "Si d\u00e9fini \u00e0 true, chaque notebook et console aura automatiquement un client dask pour le cluster actif inject\u00e9 dans le noyau sous le nom de 'client'"
+      ],
+      "settings\u0004Some deployments don't want to or are unable to use the cluster manager feature. Toggle to hide it from the user interface (note: this does not disable the underlying functionality).": [
+        "Certains d\u00e9ploiements ne veulent pas ou ne sont pas capables d'utiliser la fonctionnalit\u00e9 de gestion du cluster. Activer/d\u00e9sactiver cette fonction de l'interface utilisateur (note: cela ne d\u00e9sactive pas la fonctionnalit\u00e9 sous-jacente)."
+      ]
+    },
+    "jupyter_archive": {
+      "": {
+        "domain": "jupyter_archive",
+        "language": "fr-FR",
+        "plural_forms": "nplurals=2; plural=(n > 1);",
+        "version": "jupyterlab"
+      },
+      "%1 Archive": [
+        "Archive %1"
+      ],
+      "Download As": [
+        "T\u00e9l\u00e9charger en tant que"
+      ],
+      "Download Current Folder As": [
+        "T\u00e9l\u00e9charger le dossier actuel en tant que"
+      ],
+      "Download Current Folder as an Archive": [
+        "T\u00e9l\u00e9charger le dossier actuel en tant qu'archive"
+      ],
+      "Download as an Archive": [
+        "T\u00e9l\u00e9charger en tant qu'archive"
+      ],
+      "Extract Archive": [
+        "Extraire l'archive"
+      ],
+      "schema\u0004Archive": [
+        "Archiver"
+      ],
+      "schema\u0004Archive handler options.": [
+        "Options du gestionnaire d'archives."
+      ],
+      "settings\u0004Archive format": [
+        "Format de l'archive"
+      ],
+      "settings\u0004Archive format for compressing folder; one of [null (submenu), 'zip', 'tgz', 'tar.gz', 'tbz', 'tbz2', 'tar.bz', 'tar.bz2', 'txz', 'tar.xz']": [
+        "Format d'archive pour la compression des dossiers; un parmi [null (sous-menu), 'zip', 'tgz', 'tar.gz', 'tbz', 'tbz2', 'tar.bz', 'tar.bz2', 'txz', 'tar.xz']"
+      ],
+      "settings\u0004Download Hidden Files": [
+        "T\u00e9l\u00e9charger les fichiers cach\u00e9s"
+      ],
+      "settings\u0004Follow Symlinks": [
+        "Suivre les liens symboliques"
+      ],
+      "settings\u0004Whether or not to add hidden files to the archive when downloading; one of ['true', 'false']": [
+        "S'il faut ou non ajouter les fichiers cach\u00e9s \u00e0 l'archive lors du t\u00e9l\u00e9chargement ; un parmi ['true', 'false']"
+      ],
+      "settings\u0004Whether or not to resolve symlinks and add resulting files to the archive; one of ['true', 'false']": [
+        "S'il faut ou non suivre les liens symboliques et ajouter des fichiers r\u00e9sultants \u00e0 l'archive; un parmi ['true', 'false']"
       ]
     },
     "jupyterlab": {
@@ -267,6 +332,9 @@
       ],
       "Cell Tags": [
         "Tags de cellule"
+      ],
+      "Cell not executed due to pending input": [
+        "La cellule n'a pas \u00e9t\u00e9 ex\u00e9cut\u00e9e en raison d'une entr\u00e9e en attente"
       ],
       "Cell type": [
         "Type de cellule"
@@ -565,6 +633,9 @@
       "Disable": [
         "D\u00e9sactiver"
       ],
+      "Disable Debugger": [
+        "D\u00e9sactiver le d\u00e9bogueur"
+      ],
       "Disable Scrolling for Outputs": [
         "D\u00e9sactiver le d\u00e9filement pour les sorties"
       ],
@@ -611,13 +682,13 @@
         "Dupliquer"
       ],
       "Edit": [
-        "Modifier"
+        "\u00c9dition"
       ],
       "Enable": [
         "Activer"
       ],
-      "Enable / Disable Debugger": [
-        "Activer / D\u00e9sactiver le d\u00e9bogueur"
+      "Enable Debugger": [
+        "Activer le d\u00e9bogueur"
       ],
       "Enable Extension Manager": [
         "Activer le gestionnaire d'extensions"
@@ -684,9 +755,6 @@
       ],
       "Expand Selected Outputs": [
         "D\u00e9velopper les sorties s\u00e9lectionn\u00e9es"
-      ],
-      "Export Notebook: %1": [
-        "Exporter le notebook: %1"
       ],
       "Extend Selection Above": [
         "\u00c9tendre la s\u00e9lection au dessus"
@@ -1426,6 +1494,9 @@
       "Render All Markdown Cells": [
         "Effectuer le rendu de toutes les cellules Markdown"
       ],
+      "Render Side-by-side": [
+        "Afficher le code et la sortie c\u00f4te \u00e0 c\u00f4te"
+      ],
       "Renderer Failure: %1": [
         "\u00c9chec du rendu : %1"
       ],
@@ -1467,6 +1538,9 @@
       ],
       "Restart Kernel and Clear\u2026": [
         "Red\u00e9marrer le noyau et effacer\u2026"
+      ],
+      "Restart Kernel and Debug\u2026": [
+        "Red\u00e9marrer le noyau et d\u00e9boguer\u2026"
       ],
       "Restart Kernel and Run All": [
         "Red\u00e9marrer le noyau et ex\u00e9cuter tout le code"
@@ -1621,6 +1695,9 @@
       "Save all open documents": [
         "Enregistrer tous les documents ouverts"
       ],
+      "Save and Export Notebook: %1": [
+        "Enregistrer et exporter le notebook : %1"
+      ],
       "Save and Reload": [
         "Sauvegarder et Actualiser"
       ],
@@ -1690,6 +1767,9 @@
       "Select Kernel": [
         "S\u00e9lectionnez le noyau"
       ],
+      "Select a kernel that supports debugging to enable debugger": [
+        "S\u00e9lectionnez un noyau supportant le d\u00e9bogage pour activer le d\u00e9bogueur"
+      ],
       "Select a plugin from the list to view and edit its preferences.": [
         "S\u00e9lectionnez un plugin dans la liste pour afficher et modifier ses pr\u00e9f\u00e9rences."
       ],
@@ -1720,6 +1800,9 @@
       "Set Log Level to %1": [
         "D\u00e9finir le niveau du journal \u00e0 %1"
       ],
+      "Set side-by-side ratio": [
+        "R\u00e9gler le ratio c\u00f4te \u00e0 c\u00f4te"
+      ],
       "Set the terminal theme": [
         "D\u00e9finissez le th\u00e8me du terminal"
       ],
@@ -1740,6 +1823,9 @@
       ],
       "Show Header Above Content": [
         "Afficher l'en-t\u00eate au-dessus du contenu"
+      ],
+      "Show Hidden Files": [
+        "Afficher les fichiers cach\u00e9s"
       ],
       "Show Last Modified Column": [
         "Afficher la derni\u00e8re colonne modifi\u00e9e"
@@ -1926,6 +2012,9 @@
       "The JupyterLab development team is excited to have a robust\nthird-party extension community. However, we do not review\nthird-party extensions, and some extensions may introduce security\nrisks or contain malicious code that runs on your machine.": [
         "L'\u00e9quipe de d\u00e9veloppement de JupyterLab est heureuse d'avoir une communaut\u00e9 d'extension\ntiers robuste. Cependant, nous ne r\u00e9visons pas les extensions\ntierces, et certaines extensions peuvent introduire des risques de s\u00e9curit\u00e9\nou contenir du code malveillant qui s'ex\u00e9cute sur votre machine."
       ],
+      "The cell has not been executed to avoid kernel deadlock as there is another pending input! Submit your pending input and try again.": [
+        "La cellule n'a pas \u00e9t\u00e9 ex\u00e9cut\u00e9e pour \u00e9viter de bloquer le noyau car une autre entr\u00e9e est en attente ! Soumettez une entr\u00e9e et r\u00e9essayez."
+      ],
       "The checkpoint was last updated at: ": [
         "Le point de contr\u00f4le a \u00e9t\u00e9 mis \u00e0 jour pour la derni\u00e8re fois \u00e0: "
       ],
@@ -1976,9 +2065,6 @@
       ],
       "This notebook has been converted from an older notebook format (v%1)\nto the current notebook format (v%2).\nThe next time you save this notebook, the current notebook format (v%2) will be used.\n'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\nclose the notebook without saving it.": [
         "Ce notebook a \u00e9t\u00e9 converti d'un ancien format de notebook (v%1)\nau format actuel (v%2).\nLa prochaine fois que vous sauverez ce notebook, le format actuel du notebook (v%2) sera utilis\u00e9.\n'Anciennes versions de Jupyter peuvent ne pas \u00eatre en mesure de lire le nouveau format.' Pour pr\u00e9server la version originale,\nfermez le notebook sans le sauvegarder."
-      ],
-      "This notebook has been converted from an older notebook format (v%1)\nto the current notebook format (v%2).\nThe next time you save this notebook, the current notebook format (vthis._nbformat) will be used.\n'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\nclose the notebook without saving it.": [
-        "Ce notebook a \u00e9t\u00e9 converti d'un ancien format de notebook (v%1)\nau format actuel (v%2).\nLa prochaine fois que vous sauverez ce notebook, le format actuel du notebook (vthis._nbformat) sera utilis\u00e9.\n'Anciennes versions de Jupyter peuvent ne pas \u00eatre en mesure de lire le nouveau format.' Pour pr\u00e9server la version originale,\nfermez le notebook sans le sauvegarder."
       ],
       "This package has indicated that it needs a corresponding kernel\npackage. Please contact your Administrator to update the server with\none of the following commands:": [
         "Ce paquet a indiqu\u00e9 qu'il a besoin d'un paquet correspondant au noyau.\nVeuillez contacter votre administrateur pour mettre \u00e0 jour le serveur avec\nl'une des commandes suivantes :"
@@ -2079,6 +2165,9 @@
       "Whether the HTML file is trusted.\nTrusting the file allows scripts to run in it,\nwhich may result in security risks.\nOnly enable for files you trust.": [
         "Si le fichier HTML est fiable.\nFaire confiance au fichier permet \u00e0 des scripts de s'ex\u00e9cuter dedans,\nce qui peut entra\u00eener des risques de s\u00e9curit\u00e9.\nActiver uniquement pour les fichiers de confiance."
       ],
+      "Width of the output in side-by-side mode": [
+        "Largeur de la sortie en mode c\u00f4te \u00e0 c\u00f4te"
+      ],
       "Word Wrap": [
         "Retour \u00e0 la ligne"
       ],
@@ -2140,19 +2229,13 @@
         "Combinaison de touches pour lancer la console"
       ],
       "menu\u0004Edit": [
-        "Modifier"
-      ],
-      "menu\u0004Export Notebook As\u2026": [
-        "Exporter le notebook sous\u2026"
+        "\u00c9dition"
       ],
       "menu\u0004File": [
         "Fichier"
       ],
       "menu\u0004Help": [
         "Aide"
-      ],
-      "menu\u0004JupyterLab Theme": [
-        "Th\u00e8me JupyterLab"
       ],
       "menu\u0004Kernel": [
         "Noyau"
@@ -2167,7 +2250,10 @@
         "Ouvrir avec"
       ],
       "menu\u0004Run": [
-        "Ex\u00e9cuter"
+        "Ex\u00e9cution"
+      ],
+      "menu\u0004Save and Export Notebook As\u2026": [
+        "Enregistrer et exporter le notebook sous\u2026"
       ],
       "menu\u0004Settings": [
         "Param\u00e8tres"
@@ -2190,8 +2276,11 @@
       "menu\u0004Text Editor Theme": [
         "Th\u00e8me de l'\u00e9diteur de texte"
       ],
+      "menu\u0004Theme": [
+        "Th\u00e8me"
+      ],
       "menu\u0004View": [
-        "Afficher"
+        "Affichage"
       ],
       "notebook actions": [
         "actions du Notebook"
@@ -2520,6 +2609,9 @@
       "settings\u0004Defines if the placeholder cells should be rendered when the browser is idle": [
         "D\u00e9finit si les cellules de l'espace r\u00e9serv\u00e9 doivent \u00eatre affich\u00e9es lorsque le navigateur est inactif"
       ],
+      "settings\u0004Defines the maximum number of output cells to be rendered in the output area for cells with many outputs. The output area will have a head and the remaining outputs will be trimmed and not displayed unless the user clicks on the information message.": [
+        "D\u00e9finit le nombre maximum de r\u00e9sultats \u00e0 afficher par cellules. La zone de sortie affichera les premiers r\u00e9sultats uniquement \u00e0 moins que l'utilisateur ne clique sur le message d'information."
+      ],
       "settings\u0004Defines the maximum number of output cells to to to be rendered in the output area for cells with many outputs. The output area will have a head and a tail, and the outputs between will be trimmed and not displayed unless the user clicks on the information message.": [
         "D\u00e9finit le nombre maximum de cellules \u00e0 afficher dans la zone de sortie pour les cellules avec de nombreuses sorties. La zone de sortie aura une t\u00eate et une queue, et les sorties entre les deux seront coup\u00e9es et ne seront pas affich\u00e9es \u00e0 moins que l'utilisateur ne clique sur le message d'information."
       ],
@@ -2528,6 +2620,9 @@
       ],
       "settings\u0004Defines the observed top margin for the virtual notebook, set a positive number of pixels to render cells above the visible view": [
         "D\u00e9finit la marge sup\u00e9rieure observ\u00e9e pour le notebook virtuel, d\u00e9finit un nombre positif de pixels pour rendre les cellules au dessus de la vue visible"
+      ],
+      "settings\u0004Disable the undo/redo on the notebook document level, so actions independent cells can have their own history. The undo/redo never applies on the outputs, in other words, outputs don't have history. A moved cell completely looses history capability for now.": [
+        "D\u00e9sactive l'annulation des changements au niveau du notebook pour que les cellules ind\u00e9pendantes puissent avoir leur propre historique. Annuler les changements ne s'applique jamais aux sorties, en d'autres termes, les sorties n'ont pas d'historique. Actuellement une cellule d\u00e9plac\u00e9e perd compl\u00e8tement son historique."
       ],
       "settings\u0004Disclaimed Status": [
         "Statut de renonciation"
@@ -2568,6 +2663,9 @@
       "settings\u0004Enables using the CDN to fetch full package data.  Otherwise, the configured NPM registry will be used. Due to a lack of CORS support by NPM registry, only disable if supplying a custom registry": [
         "Active l'utilisation du CDN pour r\u00e9cup\u00e9rer les donn\u00e9es compl\u00e8tes du paquet. Sinon, le registre NPM configur\u00e9 sera utilis\u00e9. En raison d'un manque de support de CORS par le registre NPM, d\u00e9sactiver uniquement si vous fournissez un registre personnalis\u00e9"
       ],
+      "settings\u0004Experimental settings to enable the undo/redo on the notebook document level.": [
+        "Param\u00e8tre exp\u00e9rimental pour annuler/rejouer les changements au niveau du notebook complet."
+      ],
       "settings\u0004Extension Manager": [
         "Gestionnaire d'extensions"
       ],
@@ -2588,6 +2686,9 @@
       ],
       "settings\u0004Font size": [
         "Taille des caract\u00e8res"
+      ],
+      "settings\u0004Global setting to enable side-by-side rendering in notebooks": [
+        "R\u00e9glage global pour activer le rendu c\u00f4te \u00e0 c\u00f4te des notebooks"
       ],
       "settings\u0004Half-period in milliseconds used for cursor blinking. The default blink rate is 530ms. By setting this to zero, blinking can be disabled. A negative value hides the cursor entirely.": [
         "Demi-p\u00e9riode en millisecondes utilis\u00e9e pour clignoter le curseur. Le taux de clignotement par d\u00e9faut est de 530ms. En d\u00e9finissant cette valeur \u00e0 z\u00e9ro, le clignotement peut \u00eatre d\u00e9sactiv\u00e9. Une valeur n\u00e9gative masque compl\u00e8tement le curseur."
@@ -2643,11 +2744,17 @@
       "settings\u0004Log entry count limit": [
         "Limite de nombre d'entr\u00e9e de journal"
       ],
+      "settings\u0004Margin for last modified timestamp check": [
+        "Marge pour la v\u00e9rification de l'instant de la derni\u00e8re modification"
+      ],
       "settings\u0004Markdown Cell Configuration": [
         "Configuration des cellules Markdown"
       ],
       "settings\u0004Markdown Viewer": [
         "Visualiseur Markdown"
+      ],
+      "settings\u0004Max acceptable difference, in milliseconds, between last modified timestamps on disk and client": [
+        "Diff\u00e9rence maximale acceptable, en millisecondes, entre l'instant de la derni\u00e8re modification sur le disque et dans le client"
       ],
       "settings\u0004Maximum number of log entries to store in memory": [
         "Nombre maximum d'entr\u00e9es de journal \u00e0 stocker en m\u00e9moire"
@@ -2712,8 +2819,8 @@
       "settings\u0004Overrides for the default viewers for file types": [
         "Remplace les afficheurs par d\u00e9faut pour les types de fichiers"
       ],
-      "settings\u0004Overrides for where to show sidebar items\ne.g., {\"tab-manager\": \"right\"}": [
-        "Substitue pour o\u00f9 afficher les \u00e9l\u00e9ments de la barre lat\u00e9rale\npar exemple, {\"tab-manager\": \"right\"}"
+      "settings\u0004Overrides for where to show sidebar items\ne.g., {\"jp-debugger-sidebar\": \"left\"}\nYou can also change this by right-clicking the sidebar icons.": [
+        "Modifie la barre lat\u00e9rale utilis\u00e9e pour afficher un panneau\npar exemple, {\"jp-debugger-sidebar\": \"left\"}\nVous pouvez \u00e9galement modifier cela en cliquant avec le bouton droit de la souris sur les ic\u00f4nes de la barre lat\u00e9rale."
       ],
       "settings\u0004Paste with Ctrl+V": [
         "Coller avec Ctrl+V"
@@ -2763,6 +2870,9 @@
       "settings\u0004Show All Kernel Activity": [
         "Afficher toute l'activit\u00e9 du noyau"
       ],
+      "settings\u0004Show hidden files": [
+        "Afficher les fichiers cach\u00e9s"
+      ],
       "settings\u0004Show last modified column": [
         "Afficher la derni\u00e8re colonne modifi\u00e9e"
       ],
@@ -2774,6 +2884,9 @@
       ],
       "settings\u0004Shut down the session when closing the terminal.": [
         "Arr\u00eater la session lors de la fermeture du terminal."
+      ],
+      "settings\u0004Side-by-side rendering": [
+        "Rendu c\u00f4te \u00e0 c\u00f4te"
       ],
       "settings\u0004Sidebar": [
         "Barre lat\u00e9rale"
@@ -2858,6 +2971,9 @@
       ],
       "settings\u0004The list of keyboard shortcuts.": [
         "Liste des raccourcis clavier."
+      ],
+      "settings\u0004The maximum number of output cells to be rendered in the output area. Set to 0 to have the complete display.": [
+        "Le nombre maximum de r\u00e9sultats d'une cellule \u00e0 afficher. Une valeur de 0 affichera l'ensemble des r\u00e9sultats."
       ],
       "settings\u0004The maximum number of output cells to to be rendered in the output area. Set to 0 to have the complete display.": [
         "Le nombre maximum de cellules de sortie \u00e0 afficher dans la zone de sortie. Mettre \u00e0 0 pour avoir l'affichage complet."
@@ -2948,6 +3064,9 @@
       ],
       "settings\u0004Whether to scroll past the end of text document": [
         "S'il faut d\u00e9filer apr\u00e8s la fin du document texte"
+      ],
+      "settings\u0004Whether to show hidden files": [
+        "Afficher ou non les fichiers cach\u00e9s"
       ],
       "settings\u0004Whether to show status bar or not": [
         "Afficher/Masquer la barre d'\u00e9tat"
@@ -3060,7 +3179,7 @@
         "\u00cates-vous s\u00fbr de vouloir ignorer tous les fichiers %1 de ce d\u00e9p\u00f4t Git?"
       ],
       "Are you sure you want to mark this file as resolved with merge conflicts?": [
-        "\u00cates-vous s\u00fbr de vouloir marquer ce fichier comme r\u00e9solu avec des conflits de fusion ?"
+        "\u00cates-vous s\u00fbr de vouloir marquer ce fichier comme r\u00e9solu malgr\u00e9 les conflits non-r\u00e9solus ?"
       ],
       "Are you sure you want to permanently delete the branch ": [
         "\u00cates-vous s\u00fbr(e) de vouloir supprimer d\u00e9finitivement cette branche  "
@@ -3071,8 +3190,14 @@
       "Are you sure you want to permanently discard changes to all files? This action cannot be undone.": [
         "\u00cates-vous s\u00fbr de vouloir annuler d\u00e9finitivement les modifications apport\u00e9es \u00e0 tous les fichiers ? Cette action ne peut pas \u00eatre annul\u00e9e."
       ],
+      "Are you sure you want to permanently discard changes to all unstaged files? This action cannot be undone.": [
+        "\u00cates-vous s\u00fbr de vouloir annuler d\u00e9finitivement les modifications apport\u00e9es \u00e0 tous les fichiers modifi\u00e9s? Cette action ne peut pas \u00eatre annul\u00e9e."
+      ],
       "Are you sure you want to permanently discard changes to the following files?               This action cannot be undone.": [
         "\u00cates-vous s\u00fbr de vouloir supprimer d\u00e9finitivement les modifications aux fichiers suivants? Cette action ne peut pas \u00eatre annul\u00e9e."
+      ],
+      "Branch '%1' merged into '%2'.": [
+        "Branche '%1' fusionn\u00e9e dans '%2'."
       ],
       "Branch created.": [
         "Branche cr\u00e9\u00e9e."
@@ -3083,8 +3208,11 @@
       "CLONE": [
         "CLONER"
       ],
+      "COMMON ANCESTOR": [
+        "Anc\u00eatre commun"
+      ],
       "CURRENT": [
-        "ACTUEL"
+        "En cours"
       ],
       "Cancel": [
         "Annuler"
@@ -3104,6 +3232,9 @@
       "Clear the current filter": [
         "Effacer le filtre actuel"
       ],
+      "Clone": [
+        "Cloner"
+      ],
       "Clone a Repository": [
         "Cloner un d\u00e9p\u00f4t"
       ],
@@ -3116,11 +3247,17 @@
       "Cloning...": [
         "Clonage en cours..."
       ],
+      "Cloning\u2026": [
+        "Clonage en cours\u2026"
+      ],
       "Close this dialog": [
         "Quitter cette fen\u00eatre de dialogue"
       ],
       "Close this dialog without creating a new branch": [
         "Fermer cette bo\u00eete de dialogue sans cr\u00e9er de nouvelle branche"
+      ],
+      "Close this dialog without merging a branch": [
+        "Fermer cette bo\u00eete de dialogue sans fusionner une branche"
       ],
       "Commit": [
         "Commit"
@@ -3137,8 +3274,14 @@
       "Committing changes...": [
         "Validation des modifications..."
       ],
+      "Common Ancestor": [
+        "Anc\u00eatre commun"
+      ],
       "Conflicted": [
-        "En conflit"
+        "Avec conflits"
+      ],
+      "Continue Without Pulling": [
+        "Continuer sans tirer les changements"
       ],
       "Create Branch": [
         "Cr\u00e9er une branche"
@@ -3161,11 +3304,20 @@
       "Create branch based on...": [
         "Cr\u00e9er une branche bas\u00e9e sur..."
       ],
+      "Create branch based on\u2026": [
+        "Cr\u00e9er une branche bas\u00e9e sur\u2026"
+      ],
       "Creating a new branch is disabled": [
         "La cr\u00e9ation d'une nouvelle branche est d\u00e9sactiv\u00e9e"
       ],
       "Creating branch...": [
         "Cr\u00e9ation de la branche..."
+      ],
+      "Creating branch\u2026": [
+        "Cr\u00e9ation de la branche\u2026"
+      ],
+      "Current": [
+        "Actuel"
       ],
       "Current Branch": [
         "Branche actuelle"
@@ -3245,6 +3397,9 @@
       "Discard all changes failed.": [
         "\u00c9chec de la suppression de toutes les modifications."
       ],
+      "Discard all current changes and pull from remote repository": [
+        "Ignorer toutes les modifications en cours et tirer l'\u00e9tat du d\u00e9p\u00f4t distant"
+      ],
       "Discard all unstaged changes failed.": [
         "\u00c9chec de la suppression de toutes les modifications non planifi\u00e9es."
       ],
@@ -3268,6 +3423,9 @@
       ],
       "Discarding changes...": [
         "Ignorer les modifications..."
+      ],
+      "Discarding changes\u2026": [
+        "Ignorer les modifications\u2026"
       ],
       "Dismiss": [
         "Rejeter"
@@ -3305,6 +3463,12 @@
       "Error": [
         "Erreur"
       ],
+      "Error Loading File Diff:": [
+        "Erreur lors du chargement des diff\u00e9rences du fichier :"
+      ],
+      "Error Loading Notebook Diff:": [
+        "Erreur lors du chargement des diff\u00e9rences du notebook :"
+      ],
       "Error loading commit data": [
         "Erreur lors du chargement des donn\u00e9es du commit"
       ],
@@ -3329,17 +3493,38 @@
       "Failed to discard changes.": [
         "Impossible d'annuler les modifications."
       ],
+      "Failed to get a valid file value.": [
+        "Impossible d'obtenir une valeur de fichier valide."
+      ],
+      "Failed to init notebook diff view: %1": [
+        "Impossible d'afficher les diff\u00e9rences du notebook : %1"
+      ],
       "Failed to initialize the Git repository": [
         "L'initialisation du d\u00e9p\u00f4t Git a \u00e9chou\u00e9"
       ],
+      "Failed to load file diff.": [
+        "Impossible de charger les diff\u00e9rences du fichier."
+      ],
+      "Failed to load settings for the Git Extension.\n%1": [
+        "\u00c9chec du chargement des param\u00e8tres de l'extension Git.\n%1"
+      ],
       "Failed to load the jupyterlab-git server extension": [
         "Impossible de charger l'extension de serveur jupyterlab-git"
+      ],
+      "Failed to load the jupyterlab-git server extension settings": [
+        "Impossible de charger les param\u00e8tres d'extension serveur jupyterlab-git"
+      ],
+      "Failed to merge branch '%1' into '%2'.": [
+        "\u00c9chec de la fusion de la branche '%1' dans '%2'."
       ],
       "Failed to pull": [
         "Tirage a \u00e9chou\u00e9"
       ],
       "Failed to push": [
         "Poussage a \u00e9chou\u00e9"
+      ],
+      "Failed to refresh Notebook diff.": [
+        "\u00c9chec de l'actualisation des diff\u00e9rences du Notebook."
       ],
       "Failed to refresh.": [
         "\u00c9chec de l'actualisation."
@@ -3356,6 +3541,9 @@
       "Filter": [
         "Filtre"
       ],
+      "Filter branch list": [
+        "Filtrer les branches"
+      ],
       "Filter branch menu": [
         "Menu de filtrage de branche"
       ],
@@ -3364,6 +3552,9 @@
       ],
       "Git Interface": [
         "Interface Git"
+      ],
+      "Git Pull from Remote Branch": [
+        "Tirer depuis la branche distante"
       ],
       "Git credentials required": [
         "Informations d'identification Git requises"
@@ -3377,11 +3568,14 @@
       "Go to Git user interface": [
         "Aller \u00e0 l'interface utilisateur de Git"
       ],
+      "Hide unchanged cells": [
+        "Masquer les cellules inchang\u00e9es"
+      ],
       "History": [
         "Historique"
       ],
       "INCOMING": [
-        "EN COURS"
+        "\u00c0 venir"
       ],
       "Ignore": [
         "Ignorer"
@@ -3406,6 +3600,9 @@
       "Ignore this file extension (add to .gitignore)": [
         "Ignorer cette extension de fichier (ajouter \u00e0 .gitignore)"
       ],
+      "Incoming": [
+        "Arrivant"
+      ],
       "Incorrect username or password.": [
         "Nom d'utilisateur ou mot de passe incorrect."
       ],
@@ -3415,14 +3612,38 @@
       "Initializing...": [
         "Initialisation..."
       ],
+      "Initializing\u2026": [
+        "Initialisation\u2026"
+      ],
       "Manage branches and tags": [
         "G\u00e9rer les branches et les tags"
       ],
       "Mark as resolved": [
-        "Marquer comme r\u00e9solue"
+        "Marquer comme r\u00e9solu"
       ],
       "Mark file as resolved": [
         "Marquer le fichier comme r\u00e9solu"
+      ],
+      "Merge": [
+        "Fusionner"
+      ],
+      "Merge Branch": [
+        "Fusionner la branche"
+      ],
+      "Merge Branch\u2026": [
+        "Fusionner la branche\u2026"
+      ],
+      "Merge branch": [
+        "Fusionner la branche"
+      ],
+      "Merge selected branch in the current branch": [
+        "Fusionner la branche s\u00e9lectionn\u00e9e dans la branche actuelle"
+      ],
+      "Merge this branch into the current one": [
+        "Fusionner cette branche dans la branche actuelle"
+      ],
+      "Merging branch '%1'\u2026": [
+        "Fusion de la branche '%1'\u2026"
       ],
       "Name": [
         "Nom"
@@ -3444,6 +3665,9 @@
       ],
       "Not in a Git repository. Unable to add a remote.": [
         "Pas dans un d\u00e9p\u00f4t Git. Impossible d'ajouter un d\u00e9p\u00f4t distant."
+      ],
+      "One or more open files are behind %1 head. Do you want to pull the latest remote version?": [
+        "Un ou plusieurs fichiers ouverts sont derri\u00e8re la t\u00eate de %1 . Voulez-vous r\u00e9cup\u00e9rer la derni\u00e8re version distante ?"
       ],
       "Open": [
         "Ouvrir"
@@ -3481,8 +3705,17 @@
       "Publish branch": [
         "Publier la branche"
       ],
+      "Pull": [
+        "Tirer"
+      ],
       "Pull from Remote": [
         "Tirer Depuis un D\u00e9p\u00f4t Distant"
+      ],
+      "Pull from Remote (Force)": [
+        "Tirer depuis le r\u00e9pertoire distant (Force)"
+      ],
+      "Pull from remote branch": [
+        "Tirer depuis le r\u00e9pertoire distant"
       ],
       "Pull latest changes": [
         "Envoyer les derni\u00e8res modifications"
@@ -3492,6 +3725,9 @@
       ],
       "Pulling...": [
         "Tirage en cours..."
+      ],
+      "Pulling\u2026": [
+        "Tirage en cours\u2026"
       ],
       "Push code to remote repository": [
         "Pousser le code vers le d\u00e9p\u00f4t distant"
@@ -3508,8 +3744,11 @@
       "Pushing...": [
         "Poussage en cours..."
       ],
+      "Pushing\u2026": [
+        "Poussage en cours\u2026"
+      ],
       "RESULT": [
-        "R\u00c9SULTAT"
+        "R\u00e9sultat final"
       ],
       "Refresh": [
         "Actualiser"
@@ -3523,6 +3762,12 @@
       "Refreshing...": [
         "Actualisation en cours..."
       ],
+      "Refreshing\u2026": [
+        "Actualisation en cours\u2026"
+      ],
+      "Remote Changes": [
+        "Modifications distantes"
+      ],
       "Remote Git repository URL": [
         "URL du d\u00e9p\u00f4t Git distant"
       ],
@@ -3530,7 +3775,10 @@
         "R\u00e9initialiser les changements"
       ],
       "Resolve with conflicts": [
-        "R\u00e9soudre avec conflits"
+        "R\u00e9soudre malgr\u00e9 les conflits"
+      ],
+      "Result": [
+        "R\u00e9sultat"
       ],
       "Revert '%1'": [
         "Revenir \u00e0 '%1'"
@@ -3544,11 +3792,20 @@
       "Reverting changes...": [
         "Annuler les modifications..."
       ],
+      "Reverting changes\u2026": [
+        "Annuler les modifications\u2026"
+      ],
       "SHOW": [
         "Afficher"
       ],
+      "Select the branch to merge in %1": [
+        "S\u00e9lectionnez la branche \u00e0 fusionner dans %1"
+      ],
       "Set Up Remotes": [
         "Mise en place d'un d\u00e9p\u00f4t distant"
+      ],
+      "Show": [
+        "Afficher"
       ],
       "Show Diff": [
         "Afficher les diff\u00e9rences"
@@ -3636,6 +3893,9 @@
       ],
       "The default branch. Pick this if you want to start fresh from the default branch.": [
         "La branche par d\u00e9faut. Choisissez ceci si vous voulez d\u00e9marrer \u00e0 partir de la branche par d\u00e9faut."
+      ],
+      "The following open files remain behind:": [
+        "Les fichiers ouverts suivants ne sont pas \u00e0 jour :"
       ],
       "The versions of the JupyterLab Git server frontend and backend do not match. The @jupyterlab/git frontend extension has version: %1 while the python package has version %2. Please install identical version of jupyterlab-git Python package and the @jupyterlab/git extension. Try running: pip install --upgrade jupyterlab-git": [
         "Les versions du frontend et du backend du serveur JupyterLab Git ne correspondent pas. L'extension frontend @jupyterlab/git contient la version: %1 tandis que le paquetage Python contient la version %2. Veuillez installer une version identique du paquetage Python jupyterlab-git et l'extension@jupyterlab/git. Essayez d'ex\u00e9cuter: pip install --upgrade jupyterlab-git"
@@ -3727,6 +3987,9 @@
       "Your changes to the following files would be overwritten by switching:": [
         "Vos modifications apport\u00e9es aux fichiers suivants seraient \u00e9cras\u00e9es:"
       ],
+      "Your current changes forbid pulling the latest changes. Do you want to permanently discard those changes? This action cannot be undone.": [
+        "Vos modifications actuelles interdisent d'extraire les derni\u00e8res modifications. Voulez-vous supprimer d\u00e9finitivement ces modifications ? Cette action ne peut pas \u00eatre annul\u00e9e."
+      ],
       "git command not found - please ensure you have Git > 2 installed": [
         "commande git est introuvable - veuillez vous assurer que Git > 2 est install\u00e9"
       ],
@@ -3775,8 +4038,14 @@
       "settings\u0004History count": [
         "Nombre d'\u00e9l\u00e9ments de l'historique"
       ],
+      "settings\u0004If true, a popup dialog will be displayed if a user opens a file that is behind its remote branch version, or if an opened file has updates on the remote branch.": [
+        "Si true, une bo\u00eete de dialogue s'affichera si un utilisateur ouvre un fichier qui se trouve derri\u00e8re sa version de la branche distante, ou si un fichier ouvert a des mises \u00e0 jour sur la branche distante."
+      ],
       "settings\u0004If true, double clicking a file in the list of changed files will open a diff.": [
         "Si vrai, un double clic sur un fichier dans la liste des fichiers modifi\u00e9s ouvrira un diff."
+      ],
+      "settings\u0004If true, doubling clicking a file in the list of changed files will open a diff.": [
+        "Si `true`, un double clic sur un fichier dans la liste des fichiers modifi\u00e9s ouvrira un diff."
       ],
       "settings\u0004If true, use a simplified concept of staging. Only files with changes are shown (instead of showing staged/changed/untracked), and all files with changes will be automatically staged": [
         "Si true, utilise un concept simplifi\u00e9 d'indexation. Seuls les fichiers avec des modifications sont affich\u00e9s (au lieu d'afficher les fichiers index\u00e9s/modifi\u00e9s/non suivis), et tous les fichiers avec des modifications seront automatiquement index\u00e9s"
@@ -3789,6 +4058,9 @@
       ],
       "settings\u0004Number of milliseconds between polling the file system for changes.": [
         "Nombre de millisecondes entre les sondages du syst\u00e8me de fichiers pour les modifications."
+      ],
+      "settings\u0004Open files behind warning": [
+        "Avertir lors de l'ouverture de fichiers en retard sur la r\u00e9f\u00e9rence"
       ],
       "settings\u0004Refresh if the Git tab is hidden": [
         "Actualiser si l'onglet Git est cach\u00e9"
@@ -3831,11 +4103,50 @@
       " (current)": [
         " (Actuel)"
       ],
+      " with errors: %1": [
+        " avec des erreurs : %1"
+      ],
+      "%1 to %2": [
+        "%1 en %2"
+      ],
+      "%2/%3 virtual document connected (%4 connections; waiting for: %5)": [
+        "%2/%3 document virtuel connect\u00e9 (%4 connexions ; en attente : %5)"
+      ],
+      "Available": [
+        "Disponible"
+      ],
       "Cancel": [
         "Annuler"
       ],
+      "Cell": [
+        "Cellule"
+      ],
+      "Code": [
+        "Code"
+      ],
+      "Copy diagnostics' message": [
+        "Copier le message de diagnostics"
+      ],
+      "Could not rename %1 - consult the language server documentation": [
+        "Impossible de renommer %1 - consulter la documentation du serveur de language"
+      ],
+      "Diagnostics Panel": [
+        "Panneau des diagnostics"
+      ],
+      "Diagnostics are not available": [
+        "Les diagnostics ne sont pas disponibles"
+      ],
+      "Dismiss": [
+        "Ignorer"
+      ],
       "Display the completer themes": [
         "Afficher les th\u00e8mes completer"
+      ],
+      "Documentation:": [
+        "Documentation :"
+      ],
+      "Error": [
+        "Erreur"
       ],
       "Failed to fetch commands from language server spec finder `{}`:\n{}": [
         "Impossible de charger les commandes du chercheur de sp\u00e9cification du serveur de language `{}`: \n{}"
@@ -3846,17 +4157,40 @@
       "Failed to validate commands from language server spec finder `{}`:\n{}": [
         "Impossible de valider les commandes de la sp\u00e9cification du serveur de langage `{}`:\n{}"
       ],
+      "Fully connected & initialized (%2 virtual document)": [
+        "Fully connected & initialized (%2 virtual document)",
+        "Enti\u00e8rement connect\u00e9 et initialis\u00e9 (%2 document virtuel)",
+        "Compl\u00e8tement connect\u00e9 et initialis\u00e9 (%2 documents virtuels)"
+      ],
+      "Fully connected, but %2/%3 virtual document stuck uninitialized: %4": [
+        "Compl\u00e8tement connect\u00e9, mais un document virtuel sur %3 n'a pas \u00e9t\u00e9 initialis\u00e9 : %4"
+      ],
       "Highlight references": [
         "Mettre en surbrillance les r\u00e9f\u00e9rences"
       ],
       "Highlight type definition": [
         "D\u00e9finition du type de surbrillance"
       ],
+      "Hint": [
+        "Suggestion"
+      ],
+      "Ignore diagnostics like this": [
+        "Ignorer les diagnostics de ce type"
+      ],
+      "Ignore diagnostics with \"%1\" code": [
+        "Ignorer les diagnostics avec le code \"%1\""
+      ],
+      "Ignore diagnostics with \"%1\" message": [
+        "Ignorer les diagnostics avec le message \"%1\""
+      ],
       "In case of issues with installation feel welcome to ask a question on GitHub.": [
         "En cas de probl\u00e8me d'installation n'h\u00e9sitez pas \u00e0 poser une question sur GitHub."
       ],
       "Includes dedicated dark mode icons set": [
         "Inclut un ensemble d'ic\u00f4nes d\u00e9di\u00e9es au mode sombre"
+      ],
+      "Information": [
+        "Information"
       ],
       "Installation": [
         "Installation"
@@ -3867,8 +4201,41 @@
       "Jump to definition": [
         "Aller \u00e0 la d\u00e9finition"
       ],
+      "Jump to location": [
+        "Aller \u00e0 l'emplacement"
+      ],
+      "LSP Code Intelligence": [
+        "Suggestion de code LSP"
+      ],
+      "LSP Completer Themes": [
+        "Th\u00e8mes de compl\u00e9teur LSP"
+      ],
+      "LSP server extension not found": [
+        "Extension de serveur LSP introuvable"
+      ],
+      "LSP servers": [
+        "Serveurs LSP"
+      ],
+      "LSP status": [
+        "Statut LSP"
+      ],
+      "Language Servers": [
+        "Serveurs de langage"
+      ],
       "Licence: ": [
         "Licence : "
+      ],
+      "Line:Ch": [
+        "Ligne:Colonne"
+      ],
+      "Message": [
+        "Message"
+      ],
+      "Message from ": [
+        "Message de "
+      ],
+      "Missing": [
+        "Manquant"
       ],
       "No installation instructions were provided with this specification.": [
         "Aucune instruction d'installation n'a \u00e9t\u00e9 fournie avec cette sp\u00e9cification."
@@ -3882,6 +4249,12 @@
       "No language server for %1 detected": [
         "Aucun serveur de langage pour %1 d\u00e9tect\u00e9"
       ],
+      "OK": [
+        "OK"
+      ],
+      "Panel columns": [
+        "Colonnes du panneau"
+      ],
       "Rename": [
         "Renommer"
       ],
@@ -3894,14 +4267,42 @@
       "Rename to": [
         "Renommer par"
       ],
+      "Renamed %1": [
+        "Renomm\u00e9 %1"
+      ],
+      "Renamed %2 in %3 cell": [
+        "Renamed %2 in %3 cells",
+        "Renomm\u00e9 %2 dans %3 cellule",
+        "Renomm\u00e9 %2 dans %3 cellules"
+      ],
+      "Renamed %2 in %3 place": [
+        "Renamed %2 in %3 places",
+        "Renomm\u00e9 %2",
+        "Renomm\u00e9 %2 en %3 positions"
+      ],
       "Renaming %1 to %2...": [
         "Renommage de %1 vers %2..."
+      ],
+      "Running": [
+        "Actifs"
+      ],
+      "Severity": [
+        "Gravit\u00e9"
       ],
       "Show diagnostics panel": [
         "Afficher le panneau de diagnostics"
       ],
       "Skipped non-installed server(s): {}": [
         "Serveur(s) non install\u00e9(s) ignor\u00e9(s) : {}"
+      ],
+      "Skipping non-installed server: `{}`": [
+        "Ignorer les serveur(s) non install\u00e9(s) : `{}`"
+      ],
+      "Source": [
+        "Source"
+      ],
+      "Successfully copied \"%1\" to clipboard": [
+        "\"%1\" copi\u00e9 avec succ\u00e8s dans le presse-papiers"
       ],
       "Syntax highlighting": [
         "Coloration syntaxique"
@@ -3914,11 +4315,23 @@
       "Troubleshooting": [
         "R\u00e9solution de bugs"
       ],
+      "Virtual Document": [
+        "Document virtuel"
+      ],
+      "Waiting for documents initialization...": [
+        "En attente d'initialisation des documents..."
+      ],
+      "Warning": [
+        "Alerte"
+      ],
       "We do not have an auto-detection ready for a language servers supporting %1 yet.": [
         "Nous n'avons pas encore de d\u00e9tection automatique pr\u00eate pour un serveur de langage prenant en charge %1."
       ],
       "You may contribute a specification for auto-detection as described in our ": [
         "Vous pouvez contribuer \u00e0 une sp\u00e9cification pour l'auto-d\u00e9tection comme d\u00e9crit dans notre "
+      ],
+      "Your browser protects clipboard from write operations; please copy the message manually": [
+        "Votre navigateur prot\u00e8ge le presse-papiers contre les op\u00e9rations d'\u00e9criture; veuillez copier le message manuellement"
       ],
       "a dict of language server specs, keyed by implementation": [
         "un dictionnaire de sp\u00e9cifications de serveur de langue, cl\u00e9 par impl\u00e9mentation"
@@ -3929,14 +4342,33 @@
       "additional absolute paths to seek node_modules first": [
         "chemins absolus suppl\u00e9mentaires pour rechercher node_modules en premier"
       ],
+      "cell %1": [
+        "cellule %1"
+      ],
+      "cells: %1-%2": [
+        "cellules : %1-%2"
+      ],
       "documentation": [
         "documentation"
       ],
       "extra language server specs, keyed by implementation, from conf.d": [
         "sp\u00e9cifications suppl\u00e9mentaires du serveur de langage, cl\u00e9s par l'impl\u00e9mentation, depuis conf.d"
       ],
+      "not initialized": [
+        "non initialis\u00e9"
+      ],
       "path to nodejs executable": [
         "chemin vers l'ex\u00e9cutable de nodejs"
+      ],
+      "pluralized\u0004%2/%3 virtual document connected (%4 connections; waiting for: %5)": [
+        "%2/%3 virtual documents connected (%4 connections; waiting for: %5)",
+        "%2/%3 document virtuel connect\u00e9 (%4 connexions ; en attente de : %5)",
+        "%2/%3 documents virtuels connect\u00e9s (%4 connexions ; en attente de : %5)"
+      ],
+      "pluralized\u0004Fully connected, but %2/%3 virtual document stuck uninitialized: %4": [
+        "Fully connected, but %2/%3 virtual documents stuck uninitialized: %4",
+        "Compl\u00e8tement connect\u00e9, mais %2 document virtuel sur %3 n'a pas \u00e9t\u00e9 initialis\u00e9 : %4",
+        "Compl\u00e8tement connect\u00e9, mais %2 documents virtuels sur %3 n'ont pas \u00e9t\u00e9 initialis\u00e9s : %4"
       ],
       "schema\u0004Code Completion": [
         "Compl\u00e9tion du code"
@@ -3956,11 +4388,17 @@
       "schema\u0004Code Rename": [
         "Renommage du code"
       ],
+      "schema\u0004Code Signature": [
+        "Signature du code"
+      ],
       "schema\u0004Code Syntax": [
         "Syntaxe du code"
       ],
+      "schema\u0004LSP Code Signature Help settings.": [
+        "Param\u00e8tres d'aide pour la signature de code LSP."
+      ],
       "schema\u0004LSP Completion settings.": [
-        "Param\u00e8tres d'ach\u00e8vement de LSP."
+        "Param\u00e8tres de compl\u00e9tion par LSP."
       ],
       "schema\u0004LSP Diagnostics (linter results) settings.": [
         "Param\u00e8tres de diagnostics LSP (r\u00e9sultats de linter)."
@@ -3989,6 +4427,9 @@
       "settings\u0004An array of CodeMirror tokens for which the continuous hinting should be suppressed. The token names vary between languages (modes).": [
         "Un tableau de jetons CodeMirror pour lequel la suggestion continue doit \u00eatre supprim\u00e9e. Les noms de jetons varient entre les langues (modes)."
       ],
+      "settings\u0004An array of characters which should close the signature help. The signature help may be shown again after typing a character from this list if the server requests it to open.": [
+        "Un tableau de caract\u00e8res qui devrait fermer l'aide de la signature. L'aide \u00e0 la signature peut \u00eatre affich\u00e9e \u00e0 nouveau apr\u00e8s avoir tap\u00e9 un caract\u00e8re de cette liste si le serveur le demande."
+      ],
       "settings\u0004Ask servers to send trace notifications": [
         "Demander aux serveurs d'envoyer des notifications de tra\u00e7age"
       ],
@@ -3998,11 +4439,17 @@
       "settings\u0004Case-sensitive filtering": [
         "Filtrage sensible \u00e0 la casse"
       ],
+      "settings\u0004Close characters": [
+        "Caract\u00e8res de fermetures"
+      ],
       "settings\u0004Codes of diagnostics which should not be shown in the panel nor highlighted in the editor.": [
         "Codes de diagnostics qui ne devraient pas \u00eatre affich\u00e9s dans le panneau ni mis en \u00e9vidence dans l'\u00e9diteur."
       ],
+      "settings\u0004Completer layout": [
+        "Disposition du compl\u00e9teur"
+      ],
       "settings\u0004Completer theme": [
-        "Th\u00e8me completer"
+        "Th\u00e8me du compl\u00e9teur"
       ],
       "settings\u0004Configuration to be sent to language server over LSP when initialized: see the specific language server's documentation for more": [
         "Configuration \u00e0 envoyer au serveur de langue par LSP lors de l'initialisation : voir la documentation du serveur de language sp\u00e9cifique pour plus de d\u00e9tails"
@@ -4024,6 +4471,12 @@
       ],
       "settings\u0004Diagnostic messages to ignore": [
         "Messages de diagnostic \u00e0 ignorer"
+      ],
+      "settings\u0004Disable": [
+        "D\u00e9sactiver"
+      ],
+      "settings\u0004Disable this feature. Requires reloading JupyterLab to apply changes.": [
+        "D\u00e9sactiver cette fonctionnalit\u00e9. N\u00e9cessite de recharger JupyterLab pour appliquer les modifications."
       ],
       "settings\u0004If a code editor includes a code fragment in another language (for example a %%markdown magic in IPython) with appropriate foreign code extractor defined, and the extend of this code (coverage of the editor) passes the threshold, the syntax highlighting (i.e. the mode) will change to provide highlighting for the language of the foreign code.": [
         "Si un \u00e9diteur de code inclut un fragment de code dans un autre langage (par exemple une magie %%markdown dans IPython) avec un extracteur de code \u00e9tranger appropri\u00e9 d\u00e9fini, et l'extension de ce code (couverture de l'\u00e9diteur) passe le seuil, la coloration syntaxique (par exemple, le mode) va changer pour fournir la mise en \u00e9vidence de la langue du code \u00e9tranger."
@@ -4055,6 +4508,9 @@
       "settings\u0004Language-server specific configuration, keyed by implementation, e.g: \n\npyls: {\n  serverSettings: {\n    pyls: {\n      plugins: {\n        pydocstyle: {\n          enabled: true\n        },\n        pyflakes: {\n          enabled: false\n        },\n        flake8: {\n          enabled: true\n        }\n      }\n    }\n  }\n}\n\nAlternatively, using VSCode's naming convention:\n\npyls: {\n  serverSettings: {\n    \"pyls.plugins.pydocstyle.enabled\": true,\n    \"pyls.plugins.pyflakes.enabled\": false,\n    \"pyls.plugins.flake8.enabled\": true\n  }\n}": [
         "Configuration sp\u00e9cifique du serveur de language, trie par l'impl\u00e9mentation, par exemple: \n\npyls: {\n  serverSettings: {\n    pyls: {\n      plugins: {\n        pydocstyle: {\n          enabled: true\n        },\n        flocons : {\n          enabled: false\n        },\n        flake8 : {\n          enabled: true\n        }\n      }\n    }\n  }\n}\n\nAlternativement, en utilisant la convention de nommage de VSCode:\n\npyls: {\n  serverSettings: {\n    \"pyls. lugins.pydocstyle.enabled\": true,\n    \"pyls.plugins.pyflakes.enabled\": false,\n    \"pyls.plugins.flake8.enabled\": true\n  }\n}"
       ],
+      "settings\u0004Layout of the completer, one of: 'detail-below', 'side-by-side'": [
+        "Mise en page du compl\u00e9teur, un de : 'detail-below' (d\u00e9tails en dessous), 'side-by-side' (c\u00f4te-\u00e0-c\u00f4te)"
+      ],
       "settings\u0004Log all LSP communication with the LSP servers": [
         "Enregistre toutes les communications LSP avec les serveurs LSP"
       ],
@@ -4073,11 +4529,17 @@
       "settings\u0004Modifier key": [
         "Touche de combinaison"
       ],
+      "settings\u0004Number of lines to show without collapsing": [
+        "Nombre de lignes \u00e0 afficher sans regroupement"
+      ],
       "settings\u0004Number of milliseconds to delay sending out the highlights request to the language server; you can get better responsiveness adjusting this value, but setting it to zero can actually slow it down as the server might get overwhelmed when moving the cursor.": [
         "Nombre de millisecondes pour retarder l'envoi de la requ\u00eate de surlignage au serveur de language ; vous pouvez obtenir une meilleure r\u00e9activit\u00e9 en ajustant cette valeur, mais le mettre \u00e0 z\u00e9ro peut en fait le ralentir car le serveur pourrait \u00eatre d\u00e9pass\u00e9 lors du d\u00e9placement du curseur."
       ],
       "settings\u0004Number of milliseconds to delay sending out the hover request to the language server; you can get better responsiveness adjusting this value, but setting it to zero can actually slow it down as the server might get overwhelmed when moving the mouse over the code.": [
         "Nombre de millisecondes pour retarder l'envoi de la requ\u00eate de surlignage au serveur de language ; vous pouvez obtenir une meilleure r\u00e9activit\u00e9 en ajustant cette valeur, mais le mettre \u00e0 z\u00e9ro peut en fait le ralentir car le serveur pourrait \u00eatre d\u00e9pass\u00e9 lors du d\u00e9placement du curseur."
+      ],
+      "settings\u0004Pre-filter matches": [
+        "Pr\u00e9-filtrer les correspondances"
       ],
       "settings\u0004Prioritize completions from kernel": [
         "Prioriser les compl\u00e9tions du noyau"
@@ -4096,6 +4558,9 @@
       ],
       "settings\u0004Should completion filtering be case-sensitive?": [
         "Le filtrage de compl\u00e9tion doit-il \u00eatre sensible \u00e0 la casse?"
+      ],
+      "settings\u0004Should matches be pre-filtered to ensure typed token is a prefix of the match?": [
+        "Les correspondances doivent-elles \u00eatre pr\u00e9-filtr\u00e9es pour s'assurer que le mot saisi est un pr\u00e9fixe de la correspondance?"
       ],
       "settings\u0004Should perfect matches be included in the completion suggestions list?": [
         "Faut-il inclure des correspondances parfaites dans la liste des suggestions de compl\u00e9tion?"
@@ -4117,6 +4582,9 @@
       ],
       "settings\u0004The identifier of a completer theme with icons which indicate the kind of completion. Set to null to disable icons. Search for 'completer themes' in the command palette for a command displaying available themes.": [
         "L'identifiant d'un th\u00e8me complet avec des ic\u00f4nes qui indiquent le type de compl\u00e9tion. R\u00e9glez sur Null pour d\u00e9sactiver les ic\u00f4nes. Rechercher des 'theme completer' dans la palette de commandes pour une commande affichant les th\u00e8mes disponibles."
+      ],
+      "settings\u0004The number of documentation lines to show without collapsing into the details section.": [
+        "Le nombre de lignes de documentation \u00e0 afficher sans regroupement par sections."
       ],
       "settings\u0004The sources from which to exclude completion from. Possible values include 'Kernel', 'LSP'.": [
         "Les sources d'o\u00f9 il faut exclure la compl\u00e9tion. Les valeurs possibles sont 'Kernel', 'LSP'."
@@ -4263,13 +4731,13 @@
         "Termin\u00e9"
       ],
       "Error creating new tour. TourHandler id's must be unique.\nTutorial with the id: '%1' already exists.": [
-        "Erreur lors de la cr\u00e9ation d'une nouvelle visite. L'id de TourHandler doit \u00eatre unique.\nTutoriel avec l'id : '%1' existe d\u00e9j\u00e0."
+        "Erreur lors de la cr\u00e9ation d'un nouveau tour. L'id de TourHandler doit \u00eatre unique.\nTour avec l'id : '%1' existe d\u00e9j\u00e0."
       ],
       "Error encountered adding user tour %1 (%2)": [
-        "Une erreur s'est produite lors de l'ajout de la visite utilisateur %1 (%2)"
+        "Une erreur s'est produite lors de l'ajout d'un tour utilisateur %1 (%2)"
       ],
       "Fail to add tour '%1' (%2)": [
-        "Impossible d'ajouter la visite '%1' (%2)"
+        "Impossible d'ajouter le tour '%1' (%2)"
       ],
       "Next": [
         "Suivant"
@@ -4287,34 +4755,128 @@
         "Essayez le %1."
       ],
       "schema\u0004Configuration for user-defined tours. This schema is generated from https://github.com/gilbarbara/react-joyride/blob/master/types/index.d.ts": [
-        "Configuration pour les visites d\u00e9finies par l'utilisateur. Ce sch\u00e9ma est g\u00e9n\u00e9r\u00e9 \u00e0 partir de https://github.com/gilbarbara/react-joyride/blob/master/types/index.d.ts"
+        "Configuration pour les tours d\u00e9finis par l'utilisateur. Ce sch\u00e9ma est g\u00e9n\u00e9r\u00e9 \u00e0 partir de https://github.com/gilbarbara/react-joyride/blob/master/types/index.d.ts"
       ],
       "schema\u0004Tours": [
-        "Visites"
+        "Tours"
       ],
       "settings\u0004A human-readable name for the tour": [
-        "Un nom lisible par l'homme pour la visite"
+        "Un nom lisible par l'homme pour le tour"
       ],
       "settings\u0004A machine-readable ID to identify this tour, will be prefixed. Should be unique within this document.": [
-        "Un identifiant lisible par la machine pour identifier cette visite sera pr\u00e9fix\u00e9. Doit \u00eatre unique dans ce document."
+        "Un identifiant lisible par la machine pour identifier ce tour sera pr\u00e9fix\u00e9. Doit \u00eatre unique dans ce document."
       ],
       "settings\u0004An array of a tours. Each requires an `id`, `label` and `steps[]`, and may have `options`, see https://docs.react-joyride.com": [
-        "Un tableau de visites. Chacun n\u00e9cessite un `id`, un `label` et des `pas[]`, et peut avoir des `options`, voir https://docs.react-joyride.com"
+        "Un tableau de tours. Chacun n\u00e9cessite un `id`, un `label` et des `steps[]`, et peut avoir des `options`, se r\u00e9f\u00e9rer \u00e0 https://docs.react-joyride.com"
       ],
       "settings\u0004Other options for the tour": [
         "Autres options pour le tour"
       ],
       "settings\u0004The definition of the steps of a tour": [
-        "D\u00e9finition des \u00e9tapes d'une visite"
+        "D\u00e9finition des \u00e9tapes d'un tour"
       ],
       "settings\u0004Tours": [
-        "Visites"
+        "Tours"
       ],
       "settings\u0004Translation domain containing for this tour": [
-        "Domaine de traduction contenant cette visite"
+        "Domaine de traduction contenant ce tour"
+      ],
+      "settings\u0004Translation domain containing strings for this tour": [
+        "Domaine de traduction contenant les cha\u00eenes de caract\u00e8res de ce tour"
       ],
       "settings\u0004Whether to add a Help Menu item with the label to launch the tour": [
-        "Si vous souhaitez ajouter un \u00e9l\u00e9ment de menu Aide avec l'\u00e9tiquette pour lancer la visite"
+        "Si vous souhaitez ajouter un \u00e9l\u00e9ment au menu Aide avec l'\u00e9tiquette pour lancer le tour"
+      ]
+    },
+    "jupyterlab_widgets": {
+      "": {
+        "domain": "jupyterlab_widgets",
+        "language": "fr-FR",
+        "plural_forms": "nplurals=2; plural=(n > 1);",
+        "version": "jupyterlab"
+      },
+      "Save Widget State Automatically": [
+        "Enregistrer automatiquement l'\u00e9tat des widgets"
+      ],
+      "schema\u0004Jupyter Widgets": [
+        "Widgets Jupyter"
+      ],
+      "schema\u0004Jupyter widgets settings.": [
+        "Param\u00e8tres des widgets Jupyter."
+      ],
+      "settings\u0004Automatically save Jupyter widget state when a notebook is saved.": [
+        "Enregistrer automatiquement l'\u00e9tat des widgets Jupyter quand un notebook est sauvegard\u00e9."
+      ],
+      "settings\u0004Save Jupyter widget state in notebooks": [
+        "Enregistrer l'\u00e9tat des widget Jupyter dans les notebooks"
+      ]
+    },
+    "jupytext": {
+      "": {
+        "domain": "jupytext",
+        "language": "fr-FR",
+        "plural_forms": "nplurals=2; plural=(n > 1);",
+        "version": "jupyterlab"
+      },
+      "Custom pairing": [
+        "Association personnalis\u00e9e"
+      ],
+      "Error": [
+        "Erreur"
+      ],
+      "Include Metadata": [
+        "Inclure les m\u00e9tadonn\u00e9es"
+      ],
+      "Jupytext FAQ": [
+        "FAQ Jupytext"
+      ],
+      "Jupytext Reference": [
+        "R\u00e9f\u00e9rence Jupytext"
+      ],
+      "Markdown File": [
+        "Fichier Markdown"
+      ],
+      "MyST Markdown Notebook": [
+        "Notebook MyST Markdown"
+      ],
+      "Pair Notebook with Hydrogen Script": [
+        "Associer le notebook \u00e0 un script Hydrogen"
+      ],
+      "Pair Notebook with Markdown": [
+        "Associer le notebook \u00e0 un fichier Markdown"
+      ],
+      "Pair Notebook with MyST Markdown": [
+        "Associer le notebook \u00e0 un fichier MyST Markdown"
+      ],
+      "Pair Notebook with Quarto (qmd)": [
+        "Associer le notebook \u00e0 un fichier Quarto (qmd)"
+      ],
+      "Pair Notebook with R Markdown": [
+        "Associer le notebook \u00e0 un fichier R Markdown"
+      ],
+      "Pair Notebook with ipynb document": [
+        "Associer le notebook \u00e0 un document ipynb"
+      ],
+      "Pair Notebook with light Script": [
+        "Associer le notebook \u00e0 un script light"
+      ],
+      "Pair Notebook with nomarker Script": [
+        "Associer le notebook \u00e0 un script sans marqueur"
+      ],
+      "Pair Notebook with percent Script": [
+        "Associer le notebook \u00e0 un script avec %"
+      ],
+      "Please edit the notebook metadata directly if you wish a custom configuration.": [
+        "Veuillez modifier les m\u00e9tadonn\u00e9es du notebook directement si vous souhaitez une configuration personnalis\u00e9e."
+      ],
+      "Quarto Notebook": [
+        "Notebook Quarto"
+      ],
+      "R Markdown Notebook": [
+        "Notebook R Markdown"
+      ],
+      "Unpair Notebook": [
+        "Dissocier le notebook"
       ]
     },
     "retrolab": {
@@ -4333,11 +4895,17 @@
       "Dismiss": [
         "Ignorer"
       ],
+      "File Browser Section": [
+        "Section du navigateur de fichiers"
+      ],
       "Files": [
         "Fichiers"
       ],
       "Help": [
         "Aide"
+      ],
+      "Interface": [
+        "Interface"
       ],
       "Keyboard Shortcuts": [
         "Raccourcis clavier"
@@ -4370,7 +4938,10 @@
         "Ouvrir avec %1"
       ],
       "RETROLAB ON GITHUB": [
-        "RETROLAB SUR GITHUB"
+        "PROJET RETROLAB GITHUB"
+      ],
+      "Rename\u2026": [
+        "Renommer \u2026"
       ],
       "Running": [
         "Actifs"
@@ -4386,6 +4957,42 @@
       ],
       "Version: %1": [
         "Version : %1"
+      ],
+      "menu\u0004Cell Type": [
+        "Type de cellule"
+      ],
+      "schema\u0004RetroLab Menu Entries": [
+        "Entr\u00e9es du menu RetroLab"
+      ],
+      "schema\u0004RetroLab Notebook": [
+        "Notebook Retrolab"
+      ],
+      "schema\u0004RetroLab Notebook settings": [
+        "Param\u00e8tres de Notebook RetroLab"
+      ],
+      "schema\u0004RetroLab Top Area": [
+        "Barre sup\u00e9rieure de RetroLab"
+      ],
+      "schema\u0004RetroLab Top Area settings": [
+        "Param\u00e8tres de la barre sup\u00e9rieure de RetroLab"
+      ],
+      "settings\u0004Auto Scroll Outputs": [
+        "D\u00e9filement automatique des sorties de cellules"
+      ],
+      "settings\u0004RetroLab Notebook": [
+        "Notebook Retrolab"
+      ],
+      "settings\u0004RetroLab Top Area": [
+        "Zone sup\u00e9rieure de RetroLab"
+      ],
+      "settings\u0004Top Bar Visibility": [
+        "Visibilit\u00e9 de la barre sup\u00e9rieure"
+      ],
+      "settings\u0004Whether to auto scroll the output area when the outputs become too long": [
+        "Activer le d\u00e9filement automatique de la zone de sortie quand les sorties deviennent trop longues"
+      ],
+      "settings\u0004Whether to show the top bar or not": [
+        "Afficher/Masquer la zone sup\u00e9rieure"
       ]
     },
     "spellchecker": {
